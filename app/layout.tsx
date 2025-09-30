@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +29,131 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* Navbar */}
+        <header className="absolute top-0 left-0 w-full z-50">
+          <nav className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
+            {/* Logo */}
+            <Link href="/">
+              <Image
+                src="/logorosa.png"
+                alt="Rosa Solutions"
+                width={145}
+                height={60}
+                priority
+              />
+            </Link>
+
+            {/* Nav Links */}
+            <ul className="flex items-center gap-8 text-[16px] font-medium text-gray-800">
+              <li>
+                <Link
+                  href="/"
+                  className="text-[#6B46FF] font-semibold hover:text-[#6B46FF]"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about">About Us</Link>
+              </li>
+              <li className="relative group">
+                <button className="flex items-center gap-1">
+                  Services
+                  <span className="rotate-90 text-xs">›</span>
+                </button>
+                {/* Dropdown */}
+                <div className="absolute left-0 top-full  hidden group-hover:block bg-white shadow-lg rounded-lg p-4 min-w-[200px]">
+                  <Link
+                    href="/services/seo"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Seo
+                  </Link>
+                  <Link
+                    href="/services/digital-ads-advertising"
+                    className="block px-2 py-1 leading-5 hover:text-[#6B46FF] whitespace-nowrap"
+                  >
+                    Digital Ads Advertising
+                  </Link>
+                  <Link
+                    href="/services/web-development"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Web Development
+                  </Link>
+                  <Link
+                    href="/services/pr&-media-coverage"
+                    className="block px-2 py-1 leading-5 hover:text-[#6B46FF] whitespace-nowrap"
+                  >
+                    PR & MEDIA COVERAGE
+                  </Link>
+                  <Link
+                    href="/services/account-management"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Account Management
+                  </Link>
+                  <Link
+                    href="/services/app-development"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    App Development
+                  </Link>
+                  <Link
+                    href="/services/EMAIL/AUTOMATED-MARKETING"
+                    className="block px-2 py-1 leading-5 hover:text-[#6B46FF] whitespace-nowrap"
+                  >
+                    EMAIL/AUTOMATED MARKETING
+                  </Link>
+                  <Link
+                    href="/services/marketing-consulting"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Marketing Consulting
+                  </Link>
+                  <Link
+                    href="/services/graphic-desgin"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Graphic design
+                  </Link>
+                  <Link
+                    href="/services/video-development"
+                    className="block px-2 py-1 hover:text-[#6B46FF]"
+                  >
+                    Video-Development
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <Link href="/clients">Our Clients</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
+
+              {/* Language */}
+              <li className="flex items-center gap-4">
+                <Image src="/uae.png" alt="UAE Flag" width={18} height={12} />
+                <span>العربية</span>
+              </li>
+            </ul>
+
+            {/* Button */}
+            <Link
+              href="/quote"
+              className="bg-gradient-to-r from-[#6255FD] to-[#9477D1] text-white px-6 py-2 rounded-full text-[16px] font-semibold shadow-md hover:opacity-90"
+            >
+              Request a Quote
+            </Link>
+          </nav>
+        </header>
+
+        {/* Page Content */}
+        <main className="pt-[80px]">{children}</main>
       </body>
     </html>
   );
