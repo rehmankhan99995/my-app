@@ -100,7 +100,7 @@ export default function RootLayout({
                     App Development
                   </Link>
                   <Link
-                    href="/services/EMAIL/AUTOMATED-MARKETING"
+                    href="/services/email-automated-marketing"
                     className="block px-2 py-1 leading-5 hover:text-[#6B46FF] whitespace-nowrap"
                   >
                     EMAIL/AUTOMATED MARKETING
@@ -112,7 +112,7 @@ export default function RootLayout({
                     Marketing Consulting
                   </Link>
                   <Link
-                    href="/services/graphic-desgin"
+                    href="/services/graphic-design"
                     className="block px-2 py-1 hover:text-[#6B46FF]"
                   >
                     Graphic design
