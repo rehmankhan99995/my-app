@@ -149,61 +149,58 @@ export default function Home() {
             aria-label="Key services and approach"
             className="relative py-10"
           >
-           
-
             <div className="container mx-auto mx  px-4">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 {/* 1. Revenue Growth */}
                 <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
                   <div className="mb-4 text-orange-500">
-                   <Image
-                   src='/image1small.png'
-                   alt="icon"
-                   height={87}
-                   width={91}
-                   
-                   />
+                    <Image
+                      src="/image1small.png"
+                      alt="icon"
+                      height={87}
+                      width={91}
+                    />
                   </div>
                   <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold mb-2">
                     Revenue Growth
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Establishing well-thought online plans<br/> 
-                    and strategies to
-                    maximize growth for<br/> your business.
+                    Establishing well-thought online plans
+                    <br />
+                    and strategies to maximize growth for
+                    <br /> your business.
                   </p>
                 </div>
 
                 {/* 2. Joint Collaboration */}
                 <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
                   <div className="mb-4 text-blue-500">
-                   <Image
-                   src='/image3small.png'
-                   alt="icon"
-                   height={87}
-                   width={91}
-                   
-                   />
+                    <Image
+                      src="/image3small.png"
+                      alt="icon"
+                      height={87}
+                      width={91}
+                    />
                   </div>
                   <h3 className="text-[25px]  font-semibold text-[#1E1666]   mb-2 whitespace-nowrap">
                     Joint Collaboration
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Our team will work closely and  transparently with you in order
-                    to achieve your business goals based on your budget and desired results
+                    Our team will work closely and transparently with you in
+                    order to achieve your business goals based on your budget
+                    and desired results
                   </p>
                 </div>
 
                 {/* 3. Technical Assessment */}
                 <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
                   <div className="mb-4 text-green-500">
-                <Image
-                   src='/image4small.png'
-                   alt="icon"
-                   height={87}
-                   width={91}
-                   
-                   />
+                    <Image
+                      src="/image4small.png"
+                      alt="icon"
+                      height={87}
+                      width={91}
+                    />
                   </div>
                   <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold whitespace-nowrap mb-2">
                     Technical Assessment
@@ -218,12 +215,11 @@ export default function Home() {
                 <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
                   <div className="mb-4 text-purple-500">
                     <Image
-                   src='/image2small.png'
-                   alt="icon"
-                   height={87}
-                   width={91}
-                   
-                   />
+                      src="/image2small.png"
+                      alt="icon"
+                      height={87}
+                      width={91}
+                    />
                   </div>
                   <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold mb-2">
                     Digitalisation
@@ -239,7 +235,83 @@ export default function Home() {
         </div>
       </section>
       {/* new section */}
-      
+      <section className="relative py-16 bg-white">
+        <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
+          {/* --- Left Side: Illustration --- */}
+          <div className="flex-1 flex justify-center">
+            <Image
+              src="/digital marketing consultant.png" // replace with your image path
+              height={402.83}
+              width={577.98}
+              alt="Illustration"
+            />
+          </div>
+
+          {/* --- Right Side: Content --- */}
+          <div className="flex-1">
+            {/* Heading */}
+            <h2 className="text-[35px] md:text-[32px] lg:text-[36px] font-bold text-[#1E1666] leading-snug mb-4">
+              BUILD A WEBSITE THAT WILL <br />
+              POSITIVELY IMPACT THE CORE <br />
+              OF YOUR ONLINE PRESENCE
+            </h2>
+
+            {/* Subtext */}
+            <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-lg">
+              Whether you need a simple WordPress website or a more complex
+              eCommerce site, our team can assist you in generating remarkable
+              results and strengthening your business.
+            </p>
+
+            {/* Features */}
+            <div className="space-y-6">
+              {/* 1. Actionable Insights */}
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+                  <Image
+                    src="/section3icon1.png"
+                    height={57}
+                    width={57}
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-[25px] font-semibold text-[#1E1666] mb-1">
+                    Actionable Insights
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Our team will describe competitive products, estimate the<br/>
+                    market size, and identify entry barriers to help our clients<br/>
+                    outshine their competitors.
+                  </p>
+                </div>
+              </div>
+
+              {/* 2. Traffic Analysis */}
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">
+                  <Image
+                    src="/section3icon2.png"
+                    height={57}
+                    width={57}
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-[25px] font-semibold text-[#1E1666] mb-1">
+                    Traffic Analysis
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    We create opportunities for your website to increase visitor<br/>
+                    conversion, generate more quality traffic, and cross-sell
+                    <br/>through analyzing your web statistics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
