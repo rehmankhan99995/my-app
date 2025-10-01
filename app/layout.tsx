@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Navbar */}
-        <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <header className="absolute top-0 left-0 w-full z-50 ">
           <nav className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4 relative">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
@@ -85,7 +85,7 @@ export default function RootLayout({
               <li><Link href="/clients">Our Clients</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/contact">Contact Us</Link></li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-5">
                 <Image src="/uae.png" alt="UAE Flag" width={18} height={12} />
                 <span>العربية</span>
               </li>
@@ -164,7 +164,7 @@ export default function RootLayout({
         </header>
 
         {/* Page Content */}
-        <main className="pt-[80px]">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
