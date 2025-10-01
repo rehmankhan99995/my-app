@@ -3,113 +3,243 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div
-      className="relative h-[819px] max-w-auto  py-16 px-4 sm:px-12 md:px-24 
-             bg-[url('/background.png')] bg-cover bg-center overflow-hidden"
-    >
-      {/* --- Main Content Area --- */}
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-[1140px] mx-auto z-10 relative ">
-        {/* Left Side: Text, Buttons, and Logos */}
-        <div className="lg:w-1/2 text-center lg:text-left mt-17  lg:">
-          <h1 className="text-[67px] md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-4">
-            THE UNFAIR
-            <br />
-            ADVANTAGE
-          </h1>
-          <p className="text-[21px] font-normal md:text-xl text-gray-900 ">
-            Innovative Marketing Fusion of Traditional and AI – Hybrid Approach
-            for Exceptional Results
-          </p>
+    <div className="w-full overflow-x-hidden">
+      {/* ---------------- Section 1: Hero ---------------- */}
+      <section
+        className="relative py-40 px-4 sm:px-12 md:px-40
+               bg-[url('/background.png')] bg-no-repeat bg-cover bg-center overflow-hidden"
+      >
+        {/* --- Main Content Area --- */}
+        <div className="flex flex-col lg:flex-row items-center justify-between max-w-[1140px] mx-auto z-10 relative pb-24">
+          {/* Left Side: Text, Buttons, and Logos */}
+          <div className="lg:w-1/2 text-center lg:text-left">
+            <h1 className="font-roboto text-[67px] md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-4">
+              THE UNFAIR
+              <br />
+              ADVANTAGE
+            </h1>
+            <p className="text-[21px] font-normal md:text-xl text-gray-900">
+              Innovative Marketing Fusion of Traditional and AI – Hybrid
+              Approach for Exceptional Results
+            </p>
 
-          {/* Buttons Group */}
-          <div className="flex justify-center lg:justify-start space-x-6 mt-8">
-            <Button className="px-7 text-sm font-medium text-white  rounded-full bg-[#6054FF] ">
-              DISCOVER MORE
-            </Button>
-            <Button className="px-7  text-sm font-medium rounded-full bg-[#6054FF] ">
-              GET A PROPOSAL
-            </Button>
-          </div>
+            {/* Buttons Group */}
+            <div className="flex justify-center lg:justify-start space-x-6 mt-8">
+              <Button className="px-7 text-sm font-medium text-white rounded-full bg-[#6054FF]">
+                DISCOVER MORE
+              </Button>
+              <Button className="px-7 text-sm font-medium rounded-full bg-[#6054FF]">
+                GET A PROPOSAL
+              </Button>
+            </div>
 
-          <div className="flex mt-8 justify-center lg:justify-start items-center gap-4">
-            <div>
+            {/* Partner Logos */}
+            <div className="flex mt-8 justify-center lg:justify-start items-center gap-4">
               <Image
                 src="/Semrush certified agency partner badge.png"
-                alt="image"
+                alt="Semrush"
                 height={67.47}
                 width={67.47}
               />
-            </div>
-            <div>
               <Image
                 src="/metaaa.png"
-                alt="image"
+                alt="Meta"
                 height={79.38}
                 width={66.59}
               />
-            </div>
-            <div>
               <Image
                 src="/google-adsss.png"
-                alt="image"
+                alt="Google Ads"
                 height={79.38}
                 width={66.59}
               />
-            </div>
-            <div>
               <Image
                 src="/logo_wp.png.png"
-                alt="image"
-                height={79.38}
-                width={66.59}
+                alt="WordPress"
+                height={66}
+                width={80.59}
               />
-            </div>
-            <div>
               <Image
                 src="/shopify-new.png"
-                alt="image"
-                height={40}
-                width={40}
+                alt="Shopify"
+                height={110}
+                width={140}
               />
+              <div className="mt-5">
+                <Image
+                  src="/amazon-new.png"
+                  alt="Amazon"
+                  height={49.38}
+                  width={140}
+                />
+              </div>
             </div>
-            <div>
+          </div>
+
+          {/* Right Side: 3D Graph Illustration */}
+          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+            <div className="w-[350px] md:w-[450px] h-[250px] md:h-[320px] relative">
               <Image
-                src="/logo_wp.png.png"
-                alt="image"
-                height={79.38}
-                width={66.59}
+                src="/company.png"
+                alt="3D Graph Illustration of Unfair Advantage"
+                height={321.13}
+                width={503.89}
               />
             </div>
           </div>
         </div>
 
-        {/* Right Side: 3D Graph Illustration */}
-        <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          <div className="w-[350px] md:w-[450px] h-[250px] md:h-[320px] relative">
-            {/* The illustration is complex. An Image component is the only way for pixel-perfection. */}
-            <Image
-              src="/company.png"
-              alt="3D Graph Illustration of Unfair Advantage"
-              height={321.13}
-              width={503.89}
-            />
-          </div>
+        {/* Extra Content Below */}
+        {/* <div className="mt-12 flex flex-col items-start">
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+       <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+      <h1>gggggg</h1>
+    </div> */}
+      </section>
+      {/* section 2*/}
+      <section>
+        <div className="flex justify-end mt-3.5">
+          <Image src="/whatsapp.png" alt="image" height={44} width={44} />
         </div>
-      </div>
+        {/* main div*/}
+        <div className="flex  justify-center flex-col">
+          <div className="flex justify-center pt-24 ">
+            <p className="text-center max-w-3xl text-[18px] font-roboto">
+              Rosa eSolutions, a leading digital marketing agency, offers
+              comprehensive multi-platform
+              <br />
+              services designed to help your brand reach its full potential. Our
+              diverse range of growth-
+              <br />
+              focused digital marketing solutions includes everything from
+              Website Development and <br />
+              SEO to SMM & Graphic Design to PR and Videography
+            </p>
+          </div>
+          <section
+            aria-label="Key services and approach"
+            className="relative py-10"
+          >
+           
 
-      {/* --- Curved Bottom Section --- */}
-      {/* This is the hardest part to make pixel-perfect without an image or SVG.
-          This CSS approximation uses a background color and a large top border radius 
-          to mimic the wave shape. For absolute perfection, use an SVG or a background image. */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-40 transform translate-y-px 
-                      bg-white rounded-t-[50%] opacity-90"
-      >
-        {/* You'd likely need to adjust the percentage radius to match your image exactly */}
-      </div>
+            <div className="container mx-auto mx  px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                {/* 1. Revenue Growth */}
+                <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
+                  <div className="mb-4 text-orange-500">
+                   <Image
+                   src='/image1small.png'
+                   alt="icon"
+                   height={87}
+                   width={91}
+                   
+                   />
+                  </div>
+                  <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold mb-2">
+                    Revenue Growth
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Establishing well-thought online plans<br/> 
+                    and strategies to
+                    maximize growth for<br/> your business.
+                  </p>
+                </div>
 
-      {/* Another option for the curve is to use a slightly higher z-index and border radius on the container
-       *below* this section and rely on overflow hidden on this section. */}
+                {/* 2. Joint Collaboration */}
+                <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
+                  <div className="mb-4 text-blue-500">
+                   <Image
+                   src='/image3small.png'
+                   alt="icon"
+                   height={87}
+                   width={91}
+                   
+                   />
+                  </div>
+                  <h3 className="text-[25px]  font-semibold text-[#1E1666]   mb-2 whitespace-nowrap">
+                    Joint Collaboration
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Our team will work closely and  transparently with you in order
+                    to achieve your business goals based on your budget and desired results
+                  </p>
+                </div>
+
+                {/* 3. Technical Assessment */}
+                <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
+                  <div className="mb-4 text-green-500">
+                <Image
+                   src='/image4small.png'
+                   alt="icon"
+                   height={87}
+                   width={91}
+                   
+                   />
+                  </div>
+                  <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold whitespace-nowrap mb-2">
+                    Technical Assessment
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Comprehensive assessment of your website and marketing
+                    strategies to provide clear insights.
+                  </p>
+                </div>
+
+                {/* 4. Digitalisation */}
+                <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
+                  <div className="mb-4 text-purple-500">
+                    <Image
+                   src='/image2small.png'
+                   alt="icon"
+                   height={87}
+                   width={91}
+                   
+                   />
+                  </div>
+                  <h3 className="text-[25px] font-roboto text-[#1E1666] font-semibold mb-2">
+                    Digitalisation
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    We help businesses of any size and industry boost their
+                    marketing strategy and online presence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      {/* new section */}
+      
     </div>
   );
 }
