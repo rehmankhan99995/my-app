@@ -127,11 +127,11 @@ export default function Home() {
       </section>
       {/* section 2*/}
       <section>
-        <div className="flex justify-end mt-3.5">
+        <div className="flex justify-end mt-3.5 max-w-[1140px] mx-auto px-4">
           <Image src="/whatsapp.png" alt="image" height={44} width={44} />
         </div>
         {/* main div*/}
-        <div className="flex  justify-center flex-col">
+        <div className="flex flex-col items-center justify-center max-w-[1140px] mx-auto px-4">
           <div className="flex justify-center pt-24 ">
             <p className="text-center max-w-3xl text-[18px] font-roboto">
               Rosa eSolutions, a leading digital marketing agency, offers
@@ -149,7 +149,7 @@ export default function Home() {
             aria-label="Key services and approach"
             className="relative py-10"
           >
-            <div className="container mx-auto mx  px-4">
+            <div className="max-w-[1140px] mx-auto px-4">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 {/* 1. Revenue Growth */}
                 <div className="flex flex-col items-center text-center p-6 rounded-2xl  hover:shadow-md transition">
@@ -235,83 +235,112 @@ export default function Home() {
         </div>
       </section>
       {/* new section */}
-      <section className="relative py-16 bg-white">
-        <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
-          {/* --- Left Side: Illustration --- */}
-          <div className="flex-1 flex justify-center">
+    <section className="relative py-16 bg-white">
+  <div className="max-w-[1140px] mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+    {/* --- Left Side: Illustration --- */}
+    <div className="flex-1 flex justify-center">
+      <Image
+        src="/digital marketing consultant.png" // replace with your image path
+        height={402.83}
+        width={577.98}
+        alt="Illustration"
+      />
+    </div>
+
+    {/* --- Right Side: Content --- */}
+    <div className="flex-1">
+      {/* Heading */}
+      <h2 className="text-[28px] md:text-[32px] lg:text-[36px] font-bold text-[#1E1666] leading-snug mb-4">
+        BUILD A WEBSITE THAT WILL <br />
+        POSITIVELY IMPACT THE CORE <br />
+        OF YOUR ONLINE PRESENCE
+      </h2>
+
+      {/* Subtext */}
+      <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-lg">
+        Whether you need a simple WordPress website or a more complex eCommerce
+        site, our team can assist you in generating remarkable results and
+        strengthening your business.
+      </p>
+
+      {/* Features */}
+      <div className="space-y-8">
+        {/* 1. Actionable Insights */}
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-green-100">
             <Image
-              src="/digital marketing consultant.png" // replace with your image path
-              height={402.83}
-              width={577.98}
-              alt="Illustration"
+              src="/section3icon1.png"
+              height={57}
+              width={57}
+              alt="Actionable Insights"
             />
           </div>
-
-          {/* --- Right Side: Content --- */}
-          <div className="flex-1">
-            {/* Heading */}
-            <h2 className="text-[35px] md:text-[32px] lg:text-[36px] font-bold text-[#1E1666] leading-snug mb-4">
-              BUILD A WEBSITE THAT WILL <br />
-              POSITIVELY IMPACT THE CORE <br />
-              OF YOUR ONLINE PRESENCE
-            </h2>
-
-            {/* Subtext */}
-            <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-lg">
-              Whether you need a simple WordPress website or a more complex
-              eCommerce site, our team can assist you in generating remarkable
-              results and strengthening your business.
+          <div>
+            <h3 className="text-[22px] font-semibold text-[#1E1666] mb-1">
+              Actionable Insights
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Our team will describe competitive products, estimate<br/> the market
+              size, and identify entry barriers to help our clients<br/> outshine
+              their competitors.
             </p>
-
-            {/* Features */}
-            <div className="space-y-6">
-              {/* 1. Actionable Insights */}
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                  <Image
-                    src="/section3icon1.png"
-                    height={57}
-                    width={57}
-                    alt="icon"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-[25px] font-semibold text-[#1E1666] mb-1">
-                    Actionable Insights
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Our team will describe competitive products, estimate the<br/>
-                    market size, and identify entry barriers to help our clients<br/>
-                    outshine their competitors.
-                  </p>
-                </div>
-              </div>
-
-              {/* 2. Traffic Analysis */}
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">
-                  <Image
-                    src="/section3icon2.png"
-                    height={57}
-                    width={57}
-                    alt="icon"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-[25px] font-semibold text-[#1E1666] mb-1">
-                    Traffic Analysis
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    We create opportunities for your website to increase visitor<br/>
-                    conversion, generate more quality traffic, and cross-sell
-                    <br/>through analyzing your web statistics.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+
+        {/* 2. Traffic Analysis */}
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100">
+            <Image
+              src="/section3icon2.png"
+              height={57}
+              width={57}
+              alt="Traffic Analysis"
+            />
+          </div>
+          <div>
+            <h3 className="text-[22px] font-semibold text-[#1E1666] mb-1">
+              Traffic Analysis
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              We create opportunities for your website to increase visitor<br/>
+              conversion, generate more quality traffic, and cross-sell through<br/>
+              analyzing your web statistics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* new section */}
+     <section className="relative mt-24 bg-[url('/sectionbg.png')] bg-no-repeat bg-cover bg-center py-40 px-4 sm:px-8 md:px-16">
+  {/* Centered Content */}
+  <div className="max-w-[1140px] mx-auto text-center relative z-10">
+    <h2 className="text-[35px] md:text-3xl lg:text-4xl font-bold text-white leading-9">
+      Ready to Elevate Your Business<br/> Success?
+    </h2>
+    <p className="mt-4 text-base md:text-lg text-gray-200 leading-relaxed">
+      Looking for a partner to simplify your journey and drive real
+      results? Get in touch<br/> with Rosa eSolutions, your trusted Digital
+      Marketing Agency in Dubai. Our team<br/> provides innovative strategies,
+      advanced tools, and expert solutions to eliminate<br/> obstacles, boost
+      growth, and ensure your business stays ahead in a competitive<br/>
+      market.
+    </p>
+  </div>
+
+  {/* Rocket Image */}
+  <div className="absolute bottom-107 right-30 md:right-20 lg:right-22 z-20">
+    <Image
+      src="/Rocket.png"
+      alt="Rocket"
+      width={388}
+      height={279}
+      className=""
+    />
+  </div>
+</section>
     </div>
   );
 }
