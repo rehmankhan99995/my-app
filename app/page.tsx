@@ -710,160 +710,244 @@ export default function Home() {
           </div>
         </div>
       </section>
-  {/* new section */}
+      {/* new section */}
 
+      <section className="bg-[#699AE6] py-8 px-4 mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+            {/* Stat 1 - Completed Projects */}
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
+                3K
+              </h3>
+              <p className="text-white text-[20px] md:text-base font-semibold">
+                Completed Projects
+              </p>
+            </div>
 
-<section className="bg-[#699AE6] py-8 px-4 mt-20">
-  <div className="max-w-7xl mx-auto">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
-      {/* Stat 1 - Completed Projects */}
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
-          3K
-        </h3>
-        <p className="text-white text-[20px] md:text-base font-semibold">
-          Completed Projects
-        </p>
-      </div>
+            {/* Stat 2 - Satisfaction Rate */}
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
+                99%
+              </h3>
+              <p className="text-white text-[20px] md:text-base font-semibold">
+                Satisfaction Rate
+              </p>
+            </div>
 
-      {/* Stat 2 - Satisfaction Rate */}
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
-          99%
-        </h3>
-        <p className="text-white text-[20px] md:text-base font-semibold">
-          Satisfaction Rate
-        </p>
-      </div>
+            {/* Stat 3 - Customers */}
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
+                6K+
+              </h3>
+              <p className="text-white text-[20px] md:text-base font-semibold">
+                Customers
+              </p>
+            </div>
 
-      {/* Stat 3 - Customers */}
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
-          6K+
-        </h3>
-        <p className="text-white text-[20px] md:text-base font-semibold">
-          Customers
-        </p>
-      </div>
+            {/* Stat 4 - Years of Experience */}
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
+                19
+              </h3>
+              <p className="text-white text-[20px] md:text-base font-semibold">
+                Years of Experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* new little section */}
+      <section className="bg-gray-50 py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="text-black text-3xl md:text-4xl font-bold mb-2">
+              Our Clients
+            </h2>
+            <div className="w-16 h-1 bg-indigo-600 rounded-full"></div>
+          </div>
 
-      {/* Stat 4 - Years of Experience */}
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="text-[#0831AE] text-[60px] md:text-5xl font-bold mb-2">
-          19
-        </h3>
-        <p className="text-white text-[20px] md:text-base font-semibold">
-          Years of Experience
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-{/* new little section */}
-<section className="bg-gray-50 py-16 px-4">
-  <div className="max-w-7xl mx-auto">
-    {/* Header */}
-    <div className="flex flex-col items-center mb-12">
-      <h2 className="text-black text-3xl md:text-4xl font-bold mb-2">
-        Our Clients
-      </h2>
-      <div className="w-16 h-1 bg-indigo-600 rounded-full"></div>
-    </div>
+          {/* Client Logos Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+            {/* Logo Card 1 - myPediaclinic */}
+            <div className="  flex items-center justify-center hover:shadow-lg ">
+              <Image
+                src="/card1.png"
+                alt="myPediaclinic"
+                height={204}
+                width={204}
+              />
+            </div>
 
-    {/* Client Logos Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
-      {/* Logo Card 1 - myPediaclinic */}
-      <div className="bg-white rounded-lg  p-6 flex items-center justify-center hover:shadow-lg ">
-        <img 
-          src="/mypediaclinic-logo.png" 
-          alt="myPediaclinic" 
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
+            {/* Logo Card 2 - EDB */}
+            <div className="  flex items-center justify-center hover:shadow-lg transition-shadow ">
+              <Image
+                src="/card2.png"
+                alt="myPediaclinic"
+                height={204}
+                width={204}
+              />
+            </div>
 
-      {/* Logo Card 2 - EDB */}
-      <div className="bg-white rounded-lg shadow-md p-6 flex items-center justify-center hover:shadow-lg transition-shadow h-32">
-        <img 
-          src="/edb-logo.png" 
-          alt="Emirates Development Bank" 
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
+            {/* Logo Card 3 - B360 Watch */}
+            <div className="  flex items-center justify-center hover:shadow-lg transition-shadow ">
+              <Image
+                src="/360card.png"
+                alt="myPediaclinic"
+                height={204}
+                width={204}
+              />
+            </div>
 
-      {/* Logo Card 3 - B360 Watch */}
-      <div className="bg-white rounded-lg shadow-md p-6 flex items-center justify-center hover:shadow-lg transition-shadow h-32">
-        <img 
-          src="/b360-logo.png" 
-          alt="B360 Watch" 
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
+            {/* Logo Card 4 - Dr. Zainab Al-Azzawi */}
+            <div className="   flex items-center justify-center hover:shadow-lg transition-shadow ">
+              <Image
+                src="/card3.png"
+                alt="myPediaclinic"
+                height={204}
+                width={204}
+              />
+            </div>
 
-      {/* Logo Card 4 - Dr. Zainab Al-Azzawi */}
-      <div className="bg-white rounded-lg shadow-md p-6 flex items-center justify-center hover:shadow-lg transition-shadow h-32">
-        <img 
-          src="/drzainab-logo.png" 
-          alt="Dr. Zainab Al-Azzawi" 
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
+            {/* Logo Card 5 - Aras Group */}
+            <div className="   flex items-center justify-center hover:shadow-lg transition-shadow ">
+              <Image
+                src="/card4.png"
+                alt="myPediaclinic"
+                height={204}
+                width={204}
+              />
+            </div>
+          </div>
 
-      {/* Logo Card 5 - Aras Group */}
-      <div className="bg-white rounded-lg shadow-md p-6 flex items-center justify-center hover:shadow-lg transition-shadow h-32">
-        <img 
-          src="/aras-logo.png" 
-          alt="Aras Group" 
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
-    </div>
+          {/* Carousel Dots */}
+          <div className="flex justify-center gap-2">
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-indigo-600"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 9"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 10"
+            ></button>
+            <button
+              className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
+              aria-label="Slide 10"
+            ></button>
+          </div>
+        </div>
+      </section>
+      {/* last section before footer */}
+      <section className="relative mt-5 bg-[url('/bg5.png')] bg-no-repeat bg-cover bg-center py-16 px-10 sm:px-8 md:px-16 lg:px-36">
+        <div className="max-w-[1140px]">
+          {/* Header */}
+          <div className="mb-8">
+            <h2 className="text-white text-[50px] md:text-5xl font-bold mb-4">
+              Work With Us
+            </h2>
+            <p className="text-white text-[23px]  text-normal md:text-lg">
+              Fill out the form below to speak with an expert  from <br/> our team
+            </p>
+          </div>
 
-    {/* Carousel Dots */}
-    <div className="flex justify-center gap-2">
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 1"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-indigo-600"
-        aria-label="Slide 2"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 3"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 4"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 5"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 6"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 7"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 8"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 9"
-      ></button>
-      <button 
-        className="w-2 h-2 rounded-full bg-gray-300 hover:bg-indigo-600 transition-colors"
-        aria-label="Slide 10"
-      ></button>
-    </div>
-  </div>
-</section>
+          <div className="bg-[#ffffff4f] rounded-[3.5rem] p-8  md:p-12 border-2 border-white ">
+            <form className="space-y-6 ">
+       
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Name *"
+                    className="w-full bg-transparent border-b border-white text-[#ffff] placeholder-white/70 pb-3 focus:outline-none focus:border-white transition-colors"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email *"
+                    className="w-full bg-transparent border-b border-white text-white placeholder-white/70 pb-3 focus:outline-none focus:border-white transition-colors"
+                    required
+                  />
+                </div>
+              </div>
 
+              {/* Row 2: Number and Subject */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Number *"
+                    className="w-full bg-transparent border-b border-white text-white placeholder-white/70 pb-3 focus:outline-none focus:border-white transition-colors"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Subject *"
+                    className="w-full bg-transparent border-b border-white text-white placeholder-white/70 pb-3 focus:outline-none focus:border-white transition-colors"
+                    required
+                  />
+                </div>
+              </div>
 
+              {/* Row 3: Message */}
+              <div>
+                <textarea
+                  placeholder="How can we help you? *"
+                  rows={4}
+                  className="w-full bg-transparent border-b border-white text-white placeholder-white/70 pb-3 focus:outline-none focus:border-white transition-colors resize-none"
+                  required
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <div className="">
+                <button
+                  type="submit"
+                  className="bg-gradient-to-r from-[#6255FD] to-[#9477D1] text-white px-8 py-2.5 rounded-full"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
