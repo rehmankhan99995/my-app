@@ -293,113 +293,243 @@ export default function RootLayout({
 
         {/* Page Content */}
         <main>{children}</main>
-      <footer className="bg-[radial-gradient(circle_at_center,#0377B7,#223D80)] text-white py-12 px-6 md:px-24">
-  <div className="max-w-[1440px] mx-auto">
-    {/* Main Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-11 gap-10">
-      
-      {/* Left Section: Logo + Text + Social Icons + Partners */}
-      <div className="lg:col-span-3">
-        <Image
-          src="/rosawhitelogo.png"
-          alt="Rosa eSolutions"
-          width={200}
-          height={80}
-          className="mb-6"
-        />
-        <p className="text-white/90 text-[15px] leading-relaxed mb-6 max-w-xs">
-          ROSA eSolutions is a 360° digital marketing & Google partner company
-          that focuses on driving results via effective and measurable solutions.
-        </p>
+        <footer className="bg-[radial-gradient(circle_at_center,#0377B7,#223D80)] text-white py-17 px-6 md:px-16 lg:px-29">
+          <div className="max-w-[1400px] mx-auto">
+            {/* Main Content - 3 Column Layout */}
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+              {/* Column 1: Logo + Description + Social + Partners */}
+              <div className="lg:w-[280px] flex-shrink-0">
+                <Image
+                  src="/rosawhitelogo.png"
+                  alt="Rosa eSolutions"
+                  width={170}
+                  height={65}
+                  className="mb-5"
+                />
+                <p className="text-white text-[17px] leading-[1.7] mb-6">
+                  ROSA eSolutions is a 360° digital marketing & Google partner
+                  company that focuses on driving results via effective and
+                  measurable solutions.
+                </p>
 
-        {/* Social Media */}
-        <div className="flex items-center gap-3 mb-6">
-          {["/ficon5.png","/ficon1.png","/ficon2.png","/ficon3.png","/ficon.png"].map((icon, i) => (
-            <Link href="#" key={i}>
-              <Image src={icon} alt="icon" width={35} height={35} />
-            </Link>
-          ))}
-        </div>
+                {/* Social Icons */}
+                <div className="flex gap-2.5 mb-6">
+                  <Link href="#">
+                    <Image src="/ficon5.png" alt="X" width={30} height={30} />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/ficon1.png"
+                      alt="Facebook"
+                      width={30}
+                      height={30}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/ficon2.png"
+                      alt="LinkedIn"
+                      width={30}
+                      height={30}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/ficon3.png"
+                      alt="Instagram"
+                      width={30}
+                      height={30}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/ficon.png"
+                      alt="Pinterest"
+                      width={30}
+                      height={30}
+                    />
+                  </Link>
+                </div>
 
-        {/* Partners Logos Box */}
-        <div className="border border-white/20 rounded-xl p-4 flex flex-wrap items-center justify-center gap-4 bg-white/5">
-          <Image src="/google.png" alt="Google" width={38} height={38} />
-          <Image src="/fmeta.png" alt="Meta" width={48} height={30} />
-          <Image src="/fshopify.png" alt="Shopify" width={35} height={40} />
-          <Image src="/fdrive.png" alt="Analytics" width={38} height={35} />
-          <Image src="/fwordpress.png" alt="WordPress" width={36} height={36} />
-          <Image src="/semrushf.png" alt="SEMRush" width={100} height={40} />
-          <Image src="/famazon.png" alt="Amazon" width={70} height={40} />
-        </div>
-      </div>
+                {/* Partners Box */}
+                <div className="border-2 border-white rounded-xl p-6 flex flex-wrap items-center justify-center gap-2">
+                  <Image
+                    src="/google.png"
+                    alt="Google"
+                    width={44}
+                    height={44}
+                  />
+                  <Image src="/fmeta.png" alt="Meta" width={55} height={37} />
+                  <Image
+                    src="/fdrive.png"
+                    alt="Analytics"
+                    width={43}
+                    height={39}
+                  />
+                  <Image
+                    src="/fshopify.png"
+                    alt="Shopify"
+                    width={39}
+                    height={45}
+                  />
+                  <Image
+                    src="/fwordpress.png"
+                    alt="WordPress"
+                    width={42}
+                    height={42}
+                  />
+                  <Image
+                    src="/semrushf.png"
+                    alt="SEMRush"
+                    width={95}
+                    height={40}
+                  />
+                  <Image
+                    src="/famazon.png"
+                    alt="Amazon"
+                    width={65}
+                    height={36}
+                  />
+                </div>
+              </div>
 
-      {/* Important Links */}
-      <div className="flex flex-col">
-        <h3 className="text-lg font-semibold mb-4">Important Links</h3>
-        <h3>Get in Touch</h3>
-        {/* <ul className="space-y-2.5 text-sm text-white/90">
-          <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-          <li><Link href="/clients" className="hover:text-white">Our Clients</Link></li>
-          <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-          <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
-          <li><Link href="/quote" className="hover:text-white">Request a Quote</Link></li>
+              {/* Column 2: Important Links + Get In Touch (stacked) */}
+              <div className="lg:w-[1440px] ">
+                <div className="flex flex-col gap-20">
+                  {/* Important Links */}
+                  <div className="flex gap-8">
+                    <h3 className="text-white text-[28px] font-bold mb-3">
+                      Important Links
+                    </h3>
+                    {/* <ul className="space-y-1.5 text-[12px] text-white mb-8">
+          <li><Link href="/about" className="hover:opacity-80">About Us</Link></li>
+          <li><Link href="/clients" className="hover:opacity-80">Our Clients</Link></li>
+          <li><Link href="/blog" className="hover:opacity-80">Blog</Link></li>
+          <li><Link href="/contact" className="hover:opacity-80">Contact Us</Link></li>
+          <li><Link href="/quote" className="hover:opacity-80">Request a Quote</Link></li>
         </ul> */}
-      </div>
+                    <div className="flex flex-col gap-2.5">
+                      <p>About us</p>
+                      <p>our Clients</p>
+                      <p>Blog</p>
+                    </div>
+                    <div className="flex flex-col gap-2.5">
+                      <p>Contact Us</p>
+                      <p>Request a Quote</p>
+                    </div>
+                  </div>
+                  {/* Get In Touch */}
+                  <div className="flex gap-10">
+                    <h3 className="text-white text-[28px] font-bold mb-3">
+                      Get In Touch
+                    </h3>
+                    <div className="lg:w-[220px] flex-shrink-0">
+                      <h4 className="text-white font-semibold text-[18px] ">
+                        TORONTO
+                      </h4>
+                      <p className="text-white text-[16px] leading-[1.5] mb-2">
+                        60 Atlantic Avenue Suite 200 Toronto Ontario M6K 1X9,
+                        Canada
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Monday – Friday: 9:00 – 17:00
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Saturday: Off
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6] mb-2">
+                        Sunday: Off
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Email: info@erosa.ae
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Phone: (+1)4168481590
+                      </p>
+                    </div>
+                    <div className="lg:w-[230px] flex-shrink-0">
+                      <h4 className="text-white font-semibold text-[18px] tracking-wide mb-2">
+                        DUBAI
+                      </h4>
+                      <p className="text-white text-[16px] leading-[1.5] mb-2">
+                        Dubai Digital Park, Dtec,
+                        <br />
+                        Building A5, FLEX 1026, UAE
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Monday – Thursday: 9:00 – 18:00
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Friday: 9:00 – 13:00
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Saturday: Off
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6] mb-2">
+                        Sunday: Off
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Email: Info@erosa.ae
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Phone: (+971) 52 808 0465
+                      </p>
+                      <p className="text-white text-[16px] leading-[1.6]">
+                        Phone: (+971) 4 272 4971
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      {/* Toronto */}
-      <div className="lg:col-span-3 ml-20">
-        <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
-        <div className="mb-6">
-          <h4 className="text-sm font-semibold mb-2">TORONTO</h4>
-          <p className="text-white/80 text-xs leading-relaxed">
-            60 Atlantic Avenue Suite 200<br />
-            Toronto Ontario M6K 1X9, Canada
-          </p>
-          <p className="text-white/80 text-xs mt-2">Monday – Friday: 9:00 – 17:00</p>
-          <p className="text-white/80 text-xs">Saturday: Off</p>
-          <p className="text-white/80 text-xs mb-2">Sunday: Off</p>
-          <p className="text-white/80 text-xs">Email: info@erosa.ae</p>
-          <p className="text-white/80 text-xs">Phone: (+1)416 848 1590</p>
-        </div>
-      </div>
+              {/* Column 3: Toronto */}
 
-      {/* Dubai */}
-      <div className="lg:col-span-4">
-        <div className="lg:mt-12">
-          <h4 className="text-sm font-semibold mb-2">DUBAI</h4>
-          <p className="text-white/80 text-xs leading-relaxed">
-            Dubai Digital Park, Dtec,<br />
-            Building A5, FLEX 1026, UAE
-          </p>
-          <p className="text-white/80 text-xs mt-2">Monday – Thursday: 9:00 – 18:00</p>
-          <p className="text-white/80 text-xs">Friday: 9:00 – 13:00</p>
-          <p className="text-white/80 text-xs">Saturday: Off</p>
-          <p className="text-white/80 text-xs mb-2">Sunday: Off</p>
-          <p className="text-white/80 text-xs">Email: info@erosa.ae</p>
-          <p className="text-white/80 text-xs">Phone: (+971) 52 808 0465</p>
-          <p className="text-white/80 text-xs">Phone: (+971) 4 272 4971</p>
-        </div>
-      </div>
-    </div>
+              {/* Column 4: Dubai */}
+            </div>
 
-    {/* Clients */}
-    <div className="mt-12 pt-8">
-      <h3 className="text-lg font-semibold mb-6">Our Clients</h3>
-      <div className="flex flex-wrap gap-4">
-        {["/footer2.png","/footer10.png","/footer4.png","/footer5.png","/footer6.png","/footer3.png","/footer8.png","/footer1.png","/footer9.png","/footer7.png"].map((client, i) => (
-          <div key={i} className="bg-white rounded-lg p-3 h-[97px] w-[97px] flex items-center justify-center">
-            <Image src={client} alt="Client" width={80} height={80} className="object-contain" />
+            {/* Our Clients */}
+            <div className="mt-12 pt-4">
+              <h3 className="text-white text-[28px] font-bold mb-6">
+                Our Clients
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "/footer2.png",
+                  "/footer10.png",
+                  "/footer4.png",
+                  "/footer5.png",
+                  "/footer6.png",
+                  "/footer3.png",
+                  "/footer8.png",
+                  "/footer1.png",
+                  "/footer9.png",
+                  "/footer7.png",
+                ].map((client, i) => (
+                  <div
+                    key={i}
+                    className="bg-white rounded-lg p-2.5 h-[85px] w-[85px] flex items-center justify-center"
+                  >
+                    <Image
+                      src={client}
+                      alt="Client"
+                      width={70}
+                      height={70}
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Copyright */}
+
+            <div className="mt-10 border-t border-white/20 pt-6 text-center">
+              <p className="text-white/60 text-[17px] font-normal">
+                © 2025 Rosa eSolutions. All Rights Reserved.
+              </p>
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Copyright */}
-    <div className="mt-10 pt-6 text-center border-t border-white/10">
-      <p className="text-white/70 text-xs">© 2025 Rosa eSolutions. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer>
+        </footer>
       </body>
     </html>
   );

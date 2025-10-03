@@ -100,12 +100,12 @@ export default function Home() {
               marketing services designed to maximize brand performance. Our
               diverse, growth-focused digital marketing solutions portfolio
               includes capabilities such as mobile application development,
-              videography, and other{" "} 
+              videography, and other 
               <a
                 href="#"
                 className="text-[#337AB7] hover:underline font-medium"
               >
-               {" "} strategic offerings
+             {" "}{" "}{" "}strategic offerings
               </a>{" "}
               tailored to any organization’s unique needs.
             </p>

@@ -89,41 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Extra Content Below */}
-        {/* <div className="mt-12 flex flex-col items-start">
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-       <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-      <h1>gggggg</h1>
-    </div> */}
+       
       </section>
       {/* section 2*/}
       <section>
